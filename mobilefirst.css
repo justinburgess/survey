@@ -5,7 +5,11 @@ Base CSS - Mobile First
     box-sizing: border-box;
     font-size: 1.15rem;
     font-family: 'Roboto', 'Open Sans';
-    color: black;
+}
+footer {
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
 }
 .background {
     position: fixed;
@@ -14,10 +18,14 @@ Base CSS - Mobile First
 }
 .heading-div, .container {
     margin: 0 auto;
-    background-color: #68D8D6;
+    background-color: rgb(104, 216, 214, .85);
     padding: 0 1.25rem;
     border: 5px solid white;
     border-radius: 20px/15px;
+    color: white;
+}
+.container {
+    margin-top: 10px;
 }
 .text, .form-group {
     display: flex;
@@ -26,9 +34,11 @@ Base CSS - Mobile First
 .text {
     margin-bottom: 1rem;
 }
-.text-field {
+.text-field, #dropdown {
     position: relative;
     min-width: 100%;
+    border-radius: 5px;
+    color: gray;
 }
 .personal-info-label {
     margin: 1.1rem 0;
@@ -60,10 +70,16 @@ Base CSS - Mobile First
 }
 #background-image {
     position: fixed;
+    width: 110vw;
+    height: 115vh;
     margin: -10% -10%;
     z-index: 0;
-    background-color: #68D8D6;
-    background-blend-mode: luminosity;
+    background-image: url("https://m.media-amazon.com/images/I/81NSy9U5u7L._AC_SL1500_.jpg"), 
+        linear-gradient(to bottom,#C4FFF9,#07BEB8);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: multiply;
 }
 /*======================================
 Media Queries
