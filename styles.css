@@ -1,0 +1,101 @@
+  /* Tags */
+  body {
+    background: url("https://m.media-amazon.com/images/I/81NSy9U5u7L._AC_SL1500_.jpg");
+    font-family: Roboto, Helvetica, sans-serif, Arial;        
+}
+h1 {
+    color: white;
+    text-align: center;
+    margin-top: 80px;
+    font-size: xxx-large;
+}
+form {
+    text-align: left;
+    font-size: x-large;
+    color: white;
+    font-weight: bolder;
+
+}
+label {
+    display: flex;
+}
+input, textarea {
+    padding-right: 50%;
+    padding-bottom: 1.5%;
+    font-weight: bold;
+    font-size: large;
+    background-color: white;
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: rgb(231, 130, 181);
+}
+/* Classes */
+.form-group {
+    margin-top: 20px;
+    margin-left: 50px;
+}
+/* Id elements */
+div.container {
+    margin: auto;
+    border-radius: 2%;
+    border-color: white;
+    border-style: solid;
+    border-width: 5px;
+    box-shadow: 0 10px 20px white, 0 6px 6px white;
+}
+
+input.nights {
+    padding-right: 0px;
+}
+.additional-comments {
+    font-size: large;
+    padding-bottom: 100px;
+}
+#background-div {
+    background-color: rgba(39, 226, 233, 0.7);
+    margin: -50px -25px -50px -25px;
+}
+#container {
+    position: relative;
+    max-width: 700px;
+    background-color: rgba(0,255,255,0.80);
+}
+#description {
+    font-size: xx-large;
+}
+#submit {
+    background-color: white;
+    appearance: auto;
+    writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+}
+#submit-button-div {
+    position: relative;
+    margin: 5% 45%; 
+}
+#survey-form-div {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#title-div {
+    margin: 50px auto;
+    color: white;
+    background-color: aqua;
+    border-radius: 2%;
+    border-style: solid;
+    border-color: aliceblue;
+    border-width: 5px;            
+    opacity: 1;
+    text-align: center;
+    box-shadow: 0 10px 20px white, 0 6px 6px white;
+    max-width: 700px;
+}

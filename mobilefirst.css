@@ -1,0 +1,70 @@
+/*======================================
+Base CSS - Mobile First
+======================================*/
+* {
+    box-sizing: border-box;
+    font-size: 1.15rem;
+    font-family: 'Roboto', 'Open Sans';
+    color: black;
+}
+.background {
+    position: fixed;
+    margin: -10% -10%;
+    z-index: -1;
+}
+.heading-div, .container {
+    margin: 0 auto;
+    background-color: #68D8D6;
+    padding: 0 1.25rem;
+    border: 5px solid white;
+    border-radius: 20px/15px;
+}
+.text, .form-group {
+    display: flex;
+    flex-direction: column;
+}
+.text {
+    margin-bottom: 1rem;
+}
+.text-field {
+    position: relative;
+    min-width: 100%;
+}
+.personal-info-label {
+    margin: 1.1rem 0;
+}
+.form-group {
+    min-width: 100%;
+}
+.label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.submit-button-div {
+    display: flex;
+    flex-direction: row;
+}
+.submit-button {
+    margin: 10px auto;
+    width: 50%;
+    background-color: rgba(255, 215, 0);
+    color: black;
+    border-radius: 10px;
+    border: 2px solid white;
+    box-shadow: 1px 1px 1px 1px aliceblue;
+}
+.wrapper {
+    position: relative;
+    margin: 0 auto;
+    max-width: 600px;
+}
+#background-image {
+    position: fixed;
+    margin: -10% -10%;
+    z-index: 0;
+    background-color: #68D8D6;
+    background-blend-mode: luminosity;
+}
+/*======================================
+Media Queries
+======================================*/
