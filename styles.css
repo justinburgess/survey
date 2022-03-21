@@ -1,101 +1,86 @@
-  /* Tags */
-  body {
-    background: url("https://m.media-amazon.com/images/I/81NSy9U5u7L._AC_SL1500_.jpg");
-    font-family: Roboto, Helvetica, sans-serif, Arial;        
+/*======================================
+Base CSS - Mobile First
+======================================*/
+* {
+    box-sizing: border-box;
+    font-size: 1.15rem;
+    font-family: 'Roboto', 'Open Sans';
 }
-h1 {
-    color: white;
+footer {
+    position: relative;
+    margin: 0 auto;
     text-align: center;
-    margin-top: 80px;
-    font-size: xxx-large;
 }
-form {
-    text-align: left;
-    font-size: x-large;
+.background {
+    position: fixed;
+    margin: -10% -10%;
+    z-index: -1;
+}
+.heading-div, .container {
+    margin: 0 auto;
+    background-color: rgb(104, 216, 214, .85);
+    padding: 0 1.25rem;
+    border: 5px solid white;
+    border-radius: 20px/15px;
     color: white;
-    font-weight: bolder;
-
 }
-label {
+.container {
+    margin-top: 10px;
+}
+.text, .form-group {
     display: flex;
+    flex-direction: column;
 }
-input, textarea {
-    padding-right: 50%;
-    padding-bottom: 1.5%;
-    font-weight: bold;
-    font-size: large;
-    background-color: white;
-    border-width: 1px;
+.text {
+    margin-bottom: 1rem;
+}
+.text-field, #dropdown {
+    position: relative;
+    min-width: 100%;
     border-radius: 5px;
-    border-color: rgb(231, 130, 181);
+    color: gray;
 }
-/* Classes */
+.personal-info-label {
+    margin: 1.1rem 0;
+}
 .form-group {
-    margin-top: 20px;
-    margin-left: 50px;
+    min-width: 100%;
 }
-/* Id elements */
-div.container {
-    margin: auto;
-    border-radius: 2%;
-    border-color: white;
-    border-style: solid;
-    border-width: 5px;
-    box-shadow: 0 10px 20px white, 0 6px 6px white;
+.label {
+    margin-bottom: 5px;
+    font-weight: bold;
 }
-
-input.nights {
-    padding-right: 0px;
+.submit-button-div {
+    display: flex;
+    flex-direction: row;
 }
-.additional-comments {
-    font-size: large;
-    padding-bottom: 100px;
+.submit-button {
+    margin: 10px auto;
+    width: 50%;
+    background-color: rgba(255, 215, 0);
+    color: black;
+    border-radius: 10px;
+    border: 2px solid white;
+    box-shadow: 1px 1px 1px 1px aliceblue;
 }
-#background-div {
-    background-color: rgba(39, 226, 233, 0.7);
-    margin: -50px -25px -50px -25px;
-}
-#container {
+.wrapper {
     position: relative;
-    max-width: 700px;
-    background-color: rgba(0,255,255,0.80);
+    margin: 0 auto;
+    max-width: 600px;
 }
-#description {
-    font-size: xx-large;
+#background-image {
+    position: fixed;
+    width: 110vw;
+    height: 115vh;
+    margin: -10% -10%;
+    z-index: 0;
+    background-image: url("https://m.media-amazon.com/images/I/81NSy9U5u7L._AC_SL1500_.jpg"), 
+        linear-gradient(to bottom,#C4FFF9,#07BEB8);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: multiply;
 }
-#submit {
-    background-color: white;
-    appearance: auto;
-    writing-mode: horizontal-tb !important;
-    text-rendering: auto;
-    letter-spacing: normal;
-    word-spacing: normal;
-    line-height: normal;
-    text-transform: none;
-    text-indent: 0px;
-    text-shadow: none;
-    display: inline-block;
-    text-align: center;
-    align-items: flex-start;
-}
-#submit-button-div {
-    position: relative;
-    margin: 5% 45%; 
-}
-#survey-form-div {
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-#title-div {
-    margin: 50px auto;
-    color: white;
-    background-color: aqua;
-    border-radius: 2%;
-    border-style: solid;
-    border-color: aliceblue;
-    border-width: 5px;            
-    opacity: 1;
-    text-align: center;
-    box-shadow: 0 10px 20px white, 0 6px 6px white;
-    max-width: 700px;
-}
+/*======================================
+Media Queries
+======================================*/
