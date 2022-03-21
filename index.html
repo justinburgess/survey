@@ -37,17 +37,23 @@ User Story #16: Inside the form element, I am presented with a button with id="s
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
-        <link href="mobilefirst.css" rel="stylesheet" type="text/css">
+        <link href="test.css" rel="stylesheet" type="text/css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Vacation Survey</title>
     </head>
+
     <body>
-        <img id="background-image" src="https://m.media-amazon.com/images/I/81NSy9U5u7L._AC_SL1500_.jpg" alt="Image of an exotic island beach."></img>
+        <!-- Background image -->
+        <div id="background-image"></div>
+
+        <!-- Container for header and form elements -->
             <div class="wrapper">
+
                 <div class="heading-div">
                     <h1 id="heading">Vacation Survey Form</h1>
                     <p id="description">Enter your vacation destination preferences below</p>
                 </div>
+
                 <div id="survey-form-div">
                     <form id="survey-form" action="#">
                         <div id="container" class="container">
@@ -65,6 +71,7 @@ User Story #16: Inside the form element, I am presented with a button with id="s
                                     <input type="number" class="text-field nights" id="number" min="3" max="14" placeholder="Nights">
                                 </div>
                             </div>
+
                             <div id="dropdown-div" class="form-group">
                                 <label for="dropdown" id="dropdown-label" class="label"><u>Destination Type</u></label>
                                 <select name="destinations" id="dropdown">
@@ -75,32 +82,40 @@ User Story #16: Inside the form element, I am presented with a button with id="s
                                     <option value="cruise">Cruise</option>
                                 </select>
                             </div>
+
                             <div id="radio-button-div" class="form-group">
                                 <p id="location" class="label"><u>Location</u></p>
-                                <label for="international-option"><input type="radio" id="international-option"> International</label>
-                                <label for="domestic-option"><input type="radio" id="domestic-option"> Domestic</label>
-                                <label for="both-option"><input type="radio" id="both-option"> Both</label>
+                                <label for="international-option"><input type="radio" id="international-option" name="location-option"> International</input></label>
+                                <label for="domestic-option"><input type="radio" id="domestic-option" name="location-option"> Domestic</input></label>
+                                <label for="both-option"><input type="radio" id="both-option" name="location-option"> Both</input></label>
                             </div>
-                                <div id="checkbox-div" class="form-group">
-                                    <p id="beds" class="label"><u>Required Bed(s)</u></p>
-                                    <label for="king-option"><input type="checkbox" value="king bed" id="king-option"> King</label>
-                                    <label for="queen-option"><input type="checkbox" value="queen bed" id="queen-option"> Queen</label>
-                                    <label for="double-option"><input type="checkbox" value="double bed" id="double-option"> Double</label>
-                                    <label for="single-option"><input type="checkbox" value="single bed" id="single-option"> Single</label>
+
+                            <div id="checkbox-div" class="form-group">
+                                <p id="beds" class="label"><u>Required Bed(s)</u></p>
+                                <label for="king-option"><input type="checkbox" value="king bed" id="king-option"> King</label>
+                                <label for="queen-option"><input type="checkbox" value="queen bed" id="queen-option"> Queen</label>
+                                <label for="double-option"><input type="checkbox" value="double bed" id="double-option"> Double</label>
+                                <label for="single-option"><input type="checkbox" value="single bed" id="single-option"> Single</label>
                             </div>
+
                             <div id="additional-comments-div" class="form-group">
                                 <p id="comments" class="label"><u>Additional Comments</u></p>
                                 <label for="additional-comments" id="additional-comments-label">
                                     <textarea class="text-field additional-comments" id="additional-comments" placeholder="Enter additional comments here..."></textarea>
                                 </label>
                             </div>
+
                             <div class="submit-button-div">
                                 <button type="submit" class="submit-button" id="submit">Submit</button>
                             </div>
+
                         </div>
                     </form>
                 </div>
             </div>
         </div>
+        <footer>
+            <p>&copy;Justin M. Burgess 2022</p>
+        </footer>
     </body>
 </html>
